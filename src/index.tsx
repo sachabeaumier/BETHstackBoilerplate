@@ -93,7 +93,7 @@ type Todo = {
   completed: boolean;
 };
 
-let lastID = 2;
+let lastID = 3;
 const db: Todo[] = [
   { id: 1, content: "learn the beth stack", completed: true },
   { id: 2, content: "learn vim", completed: false },
