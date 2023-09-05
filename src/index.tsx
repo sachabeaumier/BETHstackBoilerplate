@@ -20,7 +20,7 @@ const app = new Elysia()
     )
   )
   .get("/todos", async () => {
-    const data = await db.select().from(todos).all();
+    const data = await db.select().from(todos).limit(10).all();
     return <TodoList todos={data} />;
   })
   .post(
